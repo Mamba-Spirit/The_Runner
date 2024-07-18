@@ -22,7 +22,8 @@ The following libraries are used in this project:
 
 ## Setup
 1. **Connect the LCD**: Ensure the LCD is correctly wired to the Arduino.
-2. **Upload the Code**: Use the Arduino IDE to upload the provided `.ino` file to your Arduino board.
+2. **LEDs Setup**: Connect the Green LED to pin 2 and the Orange LED to pin 9.
+3. **Upload the Code**: Use the Arduino IDE to upload the provided `.ino` file to your Arduino board.
 
 ## Code Explanation
 The main components of the code include:
@@ -93,6 +94,12 @@ void loop() {
   delay();
 }
 ```
+## Key Functions
+* **Saut()**: Makes the character jump to avoid obstacles.
+* **Game_Over()**: Called when the player loses the game.
+* **start()**: Initializes and starts the game.
+* **compteur_points()**: Counts the points as the player progresses.
+
 ## Usage
 * Start the Game: Once the Arduino is powered, the game will start automatically.
 * Jump: Use the designated button to make the character jump and avoid obstacles.
